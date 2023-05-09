@@ -4,8 +4,13 @@ import HeroSplitWithScreenshot from '@/components/section/hero/HeroSplitWithScre
 import HeroSimpleCenteredWithBackgroundImage from '@/components/section/hero/HeroSimpleCenteredWithBackgroundImage';
 import FooterSimpleCentered from '@/components/section/footer/FooterSimpleCentered';
 import FooterSocialLinksOnly from '@/components/section/footer/FooterSocialLinksOnly';
+import NavbarBase from '@/components/section/navigation/NavbarBase';
 
 const COMPONENTS = [
+  {
+    name: 'NavbarBase',
+    component: NavbarBase,
+  },
   {
     name: 'HeroSimpleCentered',
     component: HeroSimpleCentered,

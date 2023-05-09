@@ -5,8 +5,14 @@ import HeroSimpleCenteredWithBackgroundImage from '@/components/section/hero/Her
 import FooterSimpleCentered from '@/components/section/footer/FooterSimpleCentered';
 import FooterSocialLinksOnly from '@/components/section/footer/FooterSocialLinksOnly';
 import NavbarBase from '@/components/section/navigation/NavbarBase';
+import Breadcrumb from '@/components/section/navigation/Breadcrumb';
 
 const COMPONENTS = [
+  {
+    name: 'Breadcrumb',
+    component: Breadcrumb,
+    isCentered: true,
+  },
   {
     name: 'NavbarBase',
     component: NavbarBase,
@@ -41,7 +47,7 @@ export default function Home() {
           return (
             <div key={component.name}>
               <h2 className='mb-2 text-xl font-medium'>{component.name}</h2>
-              <ComponentPlayground>
+              <ComponentPlayground isCentered={component.isCentered}>
                 <component.component />
               </ComponentPlayground>
             </div>

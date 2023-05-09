@@ -11,7 +11,7 @@ const NavbarBase = () => {
         <div className='container mx-auto flex flex-wrap items-center justify-between px-4'>
           <div className='relative flex w-full justify-between lg:static lg:block lg:w-auto lg:justify-start'>
             <a
-              className='mr-4 inline-block whitespace-nowrap py-2 text-sm font-bold uppercase'
+              className='mr-4 inline-block whitespace-nowrap py-2 font-bold uppercase'
               href='#'
             >
               Glazed UI

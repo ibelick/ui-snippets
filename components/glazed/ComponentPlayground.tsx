@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type ComponentPlaygroundProps = {
   children: React.ReactNode;
@@ -7,11 +7,7 @@ type ComponentPlaygroundProps = {
 const ComponentPlayground: React.FC<ComponentPlaygroundProps> = ({
   children,
 }) => {
-  return (
-    <div className="rounded-md border overflow-hidden">
-      {children}
-    </div>
-  );
+  return <div className='overflow-hidden rounded-md border'>{children}</div>;
 };
 
 export default ComponentPlayground;

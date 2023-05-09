@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-type InputProps = React.ComponentPropsWithoutRef<"input">;
+type InputProps = React.ComponentPropsWithoutRef<'input'>;
 
 const Input: React.FC<InputProps> = (props) => {
-  return <input {...props} className="border border-gray-300 rounded-md p-2" />;
+  return <input {...props} className='rounded-md border border-gray-300 p-2' />;
 };
 
 export default Input;

@@ -11,12 +11,11 @@ const HeroSplitWithScreenshot = () => {
               <div className='max-w-xl text-center lg:text-left'>
                 <div>
                   <p className='text-2xl font-medium tracking-tight text-black sm:text-4xl'>
-                    I am a short heading
+                    Welcome to Glazed UI
                   </p>
                   <p className='mt-4 max-w-xl text-base tracking-tight text-gray-600'>
-                    Use this paragraph to share information about your company
-                    or products. Make it engaging and interesting, and showcase
-                    your brands personality. Thanks for visiting our website!
+                    Create beautiful websites in minutes with our library of
+                    components.
                   </p>
                 </div>
                 <div className='mt-10 flex flex-col items-center justify-center gap-3 lg:flex-row lg:justify-start'>

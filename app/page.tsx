@@ -1,6 +1,7 @@
 import ComponentPlayground from '@/components/glazed/ComponentPlayground';
 import HeroSimpleCentered from '@/components/section/hero/HeroSimpleCentered';
 import HeroSplitWithScreenshot from '@/components/section/hero/HeroSplitWithScreenshot';
+import HeroSimpleCenteredWithBackgroundImage from '@/components/section/hero/HeroSimpleCenteredWithBackgroundImage';
 import FooterSimpleCentered from '@/components/section/footer/FooterSimpleCentered';
 import FooterSocialLinksOnly from '@/components/section/footer/FooterSocialLinksOnly';
 
@@ -12,6 +13,10 @@ const COMPONENTS = [
   {
     name: 'HeroSplitWithScreenshot',
     component: HeroSplitWithScreenshot,
+  },
+  {
+    name: 'HeroSimpleCenteredWithBackgroundImage',
+    component: HeroSimpleCenteredWithBackgroundImage,
   },
   {
     name: 'FooterSimpleCentered',

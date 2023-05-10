@@ -1,22 +1,27 @@
-import clsxm from '@/lib/clsxm';
-import React from 'react';
+import { cva, type VariantProps } from 'class-variance-authority';
 
-type ComponentPlaygroundProps = {
-  children: React.ReactNode;
-  isCentered?: boolean;
-};
+const componentPlaygroundCva = cva(
+  'min-h-[200px] overflow-hidden rounded-md border p-8',
+  {
+    variants: {
+      isCentered: {
+        true: 'flex items-center justify-center',
+      },
+    },
+  }
+);
+
+export type ComponentPlaygroundProps =
+  React.ButtonHTMLAttributes<HTMLButtonElement> &
+    VariantProps<typeof componentPlaygroundCva>;
 
 const ComponentPlayground: React.FC<ComponentPlaygroundProps> = ({
   children,
   isCentered,
+  className,
 }) => {
   return (
-    <div
-      className={clsxm(
-        `min-h-[400px] overflow-hidden rounded-md border`,
-        isCentered && 'flex items-center justify-center'
-      )}
-    >
+    <div className={componentPlaygroundCva({ isCentered, className })}>
       {children}
     </div>
   );

@@ -7,6 +7,8 @@ import ButtonGradient from '@/components/lab/Button/ButtonGradient';
 import ButtonHoverGradient from '@/components/lab/Button/ButtonHoverGradient';
 import ButtonBackgroundSpotlight from '@/components/lab/Button/ButtonBackgroundSpotlight';
 import ButtonRotatingBackgroundGradient from '@/components/lab/Button/ButtonRotatingBackgroundGradient';
+import InputGradientBorder from '@/components/lab/Input/InputGradientBorder';
+import InputSpotlightBorder from '@/components/lab/Input/InputSpotlightBorder';
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
             <ButtonHoverGradient />
             <ButtonBackgroundSpotlight />
             <ButtonRotatingBackgroundGradient />
+            <InputGradientBorder />
+            <InputSpotlightBorder />
           </div>
         </div>
       </main>

@@ -5,6 +5,8 @@ import TextShine from '@/components/lab/Text/TextShine';
 import ButtonBackgroundShine from '@/components/lab/Button/ButtonBackgroundShine';
 import ButtonGradient from '@/components/lab/Button/ButtonGradient';
 import ButtonHoverGradient from '@/components/lab/Button/ButtonHoverGradient';
+import ButtonBackgroundSpotlight from '@/components/lab/Button/ButtonBackgroundSpotlight';
+import ButtonRotatingBackgroundGradient from '@/components/lab/Button/ButtonRotatingBackgroundGradient';
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
             <ButtonBackgroundShine />
             <ButtonGradient />
             <ButtonHoverGradient />
+            <ButtonBackgroundSpotlight />
+            <ButtonRotatingBackgroundGradient />
           </div>
         </div>
       </main>

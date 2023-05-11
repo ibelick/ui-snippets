@@ -2,10 +2,11 @@ import React from 'react';
 
 const ButtonRotatingBackgroundGradient = () => {
   return (
-    <button className='relative inline-flex h-12 cursor-default items-center justify-center overflow-hidden rounded-md bg-gradient-to-b from-slate-800 to-slate-900 px-6 py-5 font-medium text-white transition-colors duration-500 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'>
-      {/* height / width depends on the size of the button */}
-      <div className='absolute h-[300px] w-[300px] animate-[spin_6s_linear_infinite] bg-gradient-to-b from-[#ffb6ff] via-[#fff] to-[#b344ff] duration-200 ' />
-      <span className='relative text-black'>Glazed UI</span>
+    <button className='relative inline-flex h-12 overflow-hidden rounded-full p-[1px]'>
+      <span className='absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#ffb6ff_0%,#fff_50%,#ffb7ff_100%)]' />
+      <span className='inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950/90 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl'>
+        Glazed UI
+      </span>
     </button>
   );
 };

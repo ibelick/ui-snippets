@@ -7,14 +7,19 @@ import ButtonGradient from '@/components/lab/Button/ButtonGradient';
 import ButtonHoverGradient from '@/components/lab/Button/ButtonHoverGradient';
 import ButtonBackgroundSpotlight from '@/components/lab/Button/ButtonBackgroundSpotlight';
 import ButtonRotatingBackgroundGradient from '@/components/lab/Button/ButtonRotatingBackgroundGradient';
+import ButtonShadowGradient from '@/components/lab/Button/ButtonShadowGradient';
 import InputGradientBorder from '@/components/lab/Input/InputGradientBorder';
 import InputSpotlightBorder from '@/components/lab/Input/InputSpotlightBorder';
+import InputPulseBorder from '@/components/lab/Input/InputPulseBorder';
+import BadgeAnimatedGradientBorder from '@/components/lab/Badge/BadgeAnimatedGradientBorder';
 import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
+import BadgeShine from '@/components/lab/Badge/BadgeShine';
+import BadgeTextGradient from '@/components/lab/Badge/BadgeTextGradient';
 
 const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     // set the buttons to 160px
-    <div className='flex justify-center rounded-xl bg-gray-800/40 p-8 backdrop-blur [&>button]:w-40 [&>div]:w-40 [&>input]:w-40'>
+    <div className='flex items-center justify-center rounded-xl bg-gray-800/40 p-8 backdrop-blur [&>button]:w-40 [&>div]:w-40 [&>input]:w-40'>
       {children}
     </div>
   );
@@ -29,8 +34,13 @@ const COMPONENTS = [
   <ButtonHoverGradient />,
   <ButtonBackgroundSpotlight />,
   <ButtonRotatingBackgroundGradient />,
+  <ButtonShadowGradient />,
   <InputGradientBorder />,
   <InputSpotlightBorder />,
+  <InputPulseBorder />,
+  <BadgeAnimatedGradientBorder />,
+  <BadgeShine />,
+  <BadgeTextGradient />,
 ];
 
 export default function Home() {

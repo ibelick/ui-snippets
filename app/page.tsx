@@ -15,6 +15,9 @@ import BadgeAnimatedGradientBorder from '@/components/lab/Badge/BadgeAnimatedGra
 import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import BadgeShine from '@/components/lab/Badge/BadgeShine';
 import BadgeTextGradient from '@/components/lab/Badge/BadgeTextGradient';
+import CardAnimatedBorderGradient from '@/components/lab/Card/CardAnimatedBorderGradient';
+import CardSpotlight from '@/components/lab/Card/CardSpotlight';
+import CardPulseBorder from '@/components/lab/Card/CardPulseBorder';
 
 const Card: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
@@ -41,6 +44,9 @@ const COMPONENTS = [
   <BadgeAnimatedGradientBorder />,
   <BadgeShine />,
   <BadgeTextGradient />,
+  <CardAnimatedBorderGradient />,
+  <CardSpotlight />,
+  <CardPulseBorder />,
 ];
 
 export default function Home() {

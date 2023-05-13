@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BadgeTextGradient = () => {
   return (
     <span className='inline-flex cursor-pointer items-center justify-center rounded-full border border-slate-800 bg-black px-3 py-1 text-sm font-medium text-slate-300 backdrop-blur-3xl'>

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ButtonRotatingBackgroundGradient = () => {
   return (
     <button className='relative inline-flex h-12 overflow-hidden rounded-full p-[1px]'>

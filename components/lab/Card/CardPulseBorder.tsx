@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CardPulseBorder = () => {
   return (
     <div className='relative h-48 w-48'>

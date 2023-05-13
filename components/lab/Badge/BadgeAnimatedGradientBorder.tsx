@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BadgeAnimatedGradientBorder = () => {
   return (
     <span className='relative inline-block overflow-hidden rounded-full p-[1px]'>

@@ -4,15 +4,16 @@ import path from 'path';
 import CodeBlock from '@/components/glazed/CodeBlock';
 import { GLAZED_COMPONENTS } from '@/data/components';
 
-async function readAndConvertToMDX(filePath: string) {
+async function readFilePath(filePath: string) {
   const readFile = promisify(fs.readFile);
+
+  console.log('readFile', readFile);
+
   const fileContent = await readFile(
     path.join(process.cwd(), filePath),
     'utf8'
   );
-  const tsxCode = '`\n' + fileContent + '\n`\n';
-
-  return tsxCode;
+  return fileContent;
 }
 
 export async function generateStaticParams() {
@@ -35,15 +36,13 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
   }
 
   const filePath = `./components/lab/${currentComponentData?.type}/${currentComponentData?.component.name}.tsx`;
-  const mdxSource = await readAndConvertToMDX(filePath);
-
-  // copy code
+  const code = await readFilePath(filePath);
 
   return (
     <div>
       <div className='container text-white'>
         <currentComponentData.component />
-        <CodeBlock markdownContent={mdxSource} />
+        <CodeBlock code={code} />
       </div>
     </div>
   );

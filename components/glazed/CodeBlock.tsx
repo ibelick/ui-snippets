@@ -1,23 +1,27 @@
-'use client';
-import { useEffect } from 'react';
+const code = `
+import React from 'react';
 
-import Prism from 'prismjs';
-import ReactMarkdown from 'react-markdown';
+const TextGradient = () => {
+  return (
+    <span className='bg-gradient-to-t from-[#ffb6ff] to-[#b344ff] bg-clip-text text-xl text-transparent'>
+      Glazed UI
+    </span>
+  );
+};
 
-require('prismjs/components/prism-javascript');
-require('prismjs/components/prism-css');
-require('prismjs/components/prism-jsx');
+export default TextGradient;
+`;
 
 type CodeBlockProps = {
   markdownContent: string;
 };
 
 const CodeBlock: React.FC<CodeBlockProps> = ({ markdownContent }) => {
-  useEffect(() => {
-    Prism.highlightAll();
-  }, []);
-
-  return <ReactMarkdown children={markdownContent} />;
+  return (
+    <pre className='code-output'>
+      <code className={`language-tsx`}>{code}</code>
+    </pre>
+  );
 };
 
 export default CodeBlock;

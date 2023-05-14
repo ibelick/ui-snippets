@@ -46,7 +46,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <div className='bg-black'>
           <div className='mx-auto min-h-screen max-w-5xl px-4'>
             <Header />

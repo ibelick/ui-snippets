@@ -1,7 +1,7 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 
 const componentPlaygroundCva = cva(
-  'min-h-[200px] overflow-hidden rounded-md border p-8',
+  'min-h-[200px] overflow-hidden rounded-md border border-neutral-800 p-8',
   {
     variants: {
       isCentered: {

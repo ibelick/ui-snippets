@@ -3,16 +3,16 @@ import fs from 'fs';
 import path from 'path';
 import CodeBlock from '@/components/glazed/CodeBlock';
 import { GLAZED_COMPONENTS } from '@/data/components';
+import CopyCode from '@/components/glazed/CopyCode';
+import ComponentPlayground from '@/components/glazed/ComponentPlayground';
 
 async function readFilePath(filePath: string) {
   const readFile = promisify(fs.readFile);
-
-  console.log('readFile', readFile);
-
   const fileContent = await readFile(
     path.join(process.cwd(), filePath),
     'utf8'
   );
+
   return fileContent;
 }
 
@@ -41,8 +41,15 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <div>
       <div className='container text-white'>
-        <currentComponentData.component />
-        <CodeBlock code={code} />
+        <ComponentPlayground isCentered>
+          <currentComponentData.component />
+        </ComponentPlayground>
+        <div className='relative mt-6'>
+          <div className='absolute right-4 top-4'>
+            <CopyCode code={code} />
+          </div>
+          <CodeBlock code={code} />
+        </div>
       </div>
     </div>
   );

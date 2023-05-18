@@ -35,11 +35,16 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
     return <div>Component not found</div>;
   }
 
-  const filePath = `./components/lab/${currentComponentData?.type}/${currentComponentData?.component.name}.tsx`;
+  const filePath = `./components/lab/${
+    currentComponentData?.type
+  }/${currentComponentData?.name.replace(/\s+/g, '')}.tsx`;
   const code = await readFilePath(filePath);
 
   return (
-    <div>
+    <div className='mt-10 pb-32'>
+      <h1 className='mb-2 text-xl text-gray-400'>
+        {currentComponentData.name}
+      </h1>
       <div className='container text-white'>
         <ComponentPlayground isCentered>
           <currentComponentData.component />

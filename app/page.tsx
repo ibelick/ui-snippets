@@ -2,15 +2,28 @@ import { ArrowRightIcon } from '@radix-ui/react-icons';
 import { GLAZED_COMPONENTS } from '@/data/components';
 import Link from 'next/link';
 
-const Card: React.FC<{ children: React.ReactNode; slug: string }> = ({
+type CardComponentProps = {
+  children: React.ReactNode;
+  slug: string;
+  name: string;
+};
+
+const CardComponent: React.FC<CardComponentProps> = ({
   children,
   slug,
+  name,
 }) => {
   return (
-    <div className='relative flex items-center justify-center rounded-xl bg-gray-800/40 p-8 backdrop-blur '>
-      <div className='absolute right-2 top-2'>
+    <div className='relative flex items-center justify-center rounded-xl bg-gray-800/40 px-8 py-32 backdrop-blur '>
+      <Link
+        href={`/${slug}`}
+        className='absolute left-5 top-3 text-sm text-slate-400'
+      >
+        {name}
+      </Link>
+      <div className='absolute right-5 top-3'>
         <Link href={`/${slug}`}>
-          <ArrowRightIcon className='h-5 w-5 text-slate-300' />
+          <ArrowRightIcon className='h-5 w-5 text-slate-400' />
         </Link>
       </div>
       {/* set the components to 160px */}
@@ -44,9 +57,9 @@ export default function Home() {
       <div className='mx-auto max-w-7xl py-10'>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
           {GLAZED_COMPONENTS.map((item, index) => (
-            <Card key={index} slug={item.slug}>
+            <CardComponent key={index} slug={item.slug} name={item.name}>
               <item.component />
-            </Card>
+            </CardComponent>
           ))}
         </div>
       </div>

@@ -17,6 +17,24 @@ import CardAnimatedBorderGradient from '@/components/lab/card/CardAnimatedBorder
 import CardSpotlight from '@/components/lab/card/CardSpotlight';
 import CardPulseBorder from '@/components/lab/card/CardPulseBorder';
 
+const TWCONFIG = {
+  ['animated-background-shine']: {
+    theme: {
+      extend: {
+        animation: {
+          'background-shine': 'background-shine 2s linear infinite',
+        },
+        keyframes: {
+          'background-shine': {
+            from: { backgroundPosition: '0 0' },
+            to: { backgroundPosition: '-200% 0' },
+          },
+        },
+      },
+    },
+  },
+};
+
 export const GLAZED_COMPONENTS = [
   {
     name: 'Text Gradient',
@@ -95,6 +113,7 @@ export const GLAZED_COMPONENTS = [
     component: BadgeAnimatedGradientBorder,
     slug: 'badge-animated-gradient-border',
     type: 'badge',
+    twConfig: TWCONFIG['animated-background-shine'],
   },
   {
     name: 'Badge Shine',

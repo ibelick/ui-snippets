@@ -39,22 +39,29 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
     currentComponentData?.type
   }/${currentComponentData?.name.replace(/\s+/g, '')}.tsx`;
   const code = await readFilePath(filePath);
+  const twConfig = JSON.stringify(currentComponentData?.twConfig, null, 2);
 
   return (
     <div className='mt-10 pb-32'>
-      <h1 className='mb-2 text-xl text-gray-400'>
+      <h1 className='text-md mb-2 font-light text-gray-400'>
         {currentComponentData.name}
       </h1>
       <div className='container text-white'>
         <ComponentPlayground isCentered>
           <currentComponentData.component />
         </ComponentPlayground>
-        <div className='relative mt-6'>
-          <div className='absolute right-4 top-4'>
-            <CopyCode code={code} />
-          </div>
-          <CodeBlock code={code} />
+        <div className='mt-8'>
+          <CodeBlock code={code} lang='tsx' />
         </div>
+        {Boolean(twConfig) ? (
+          <div className='mt-8'>
+            <CodeBlock
+              code={twConfig}
+              lang='tsx'
+              fileName='tailwind.config.js'
+            />
+          </div>
+        ) : null}
       </div>
     </div>
   );

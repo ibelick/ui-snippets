@@ -94,19 +94,19 @@ export const GLAZED_COMPONENTS = [
     name: 'Input Gradient Border',
     component: InputGradientBorder,
     slug: 'input-gradient-border',
-    type: 'input',
+    type: 'bla5',
   },
   {
     name: 'Input Spotlight Border',
     component: InputSpotlightBorder,
     slug: 'input-spotlight-border',
-    type: 'input',
+    type: 'bla5',
   },
   {
     name: 'Input Pulse Border',
     component: InputPulseBorder,
     slug: 'input-pulse-border',
-    type: 'input',
+    type: 'bla5',
   },
   {
     name: 'Badge Animated Gradient Border',

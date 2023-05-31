@@ -34,7 +34,7 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
     return <div>Component not found</div>;
   }
 
-  const filePath = `/components/lab/${
+  const filePath = `./components/lab/${
     currentComponentData?.type
   }/${currentComponentData?.name.replace(/\s+/g, '')}.tsx`;
 

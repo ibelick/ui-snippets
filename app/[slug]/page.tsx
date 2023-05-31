@@ -3,7 +3,6 @@ import fs from 'fs';
 import path from 'path';
 import CodeBlock from '@/components/glazed/CodeBlock';
 import { GLAZED_COMPONENTS } from '@/data/components';
-import CopyCode from '@/components/glazed/CopyCode';
 import ComponentPlayground from '@/components/glazed/ComponentPlayground';
 
 async function readFilePath(filePath: string) {
@@ -35,7 +34,7 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
     return <div>Component not found</div>;
   }
 
-  const filePath = `./components/lab/${
+  const filePath = `/components/lab/${
     currentComponentData?.type
   }/${currentComponentData?.name.replace(/\s+/g, '')}.tsx`;
   const code = await readFilePath(filePath);

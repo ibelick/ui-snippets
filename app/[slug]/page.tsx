@@ -38,8 +38,6 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
     currentComponentData?.type
   }/${currentComponentData?.name.replace(/\s+/g, '')}.tsx`;
 
-  console.log(filePath);
-
   const code = await readFilePath(filePath);
   const twConfig = JSON.stringify(currentComponentData?.twConfig, null, 2);
 

@@ -52,7 +52,7 @@ const ButtonAnimatedGradient = () => {
             background: `radial-gradient(300px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.1), #0000000f)`,
           }}
         />
-        Glazed UI
+        Click Me
       </button>
     </>
   );

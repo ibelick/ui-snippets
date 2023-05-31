@@ -51,7 +51,7 @@ const CardSpotlight = () => {
           background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,182,255,.1), transparent 40%)`,
         }}
       />
-      <p className='text-sm text-slate-200'>Glazed UI</p>
+      <p className='text-sm text-slate-200'>Card Content</p>
     </div>
   );
 };

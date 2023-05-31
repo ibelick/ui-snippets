@@ -49,7 +49,6 @@ export default function Home() {
             <p className='text-xl text-slate-500'>
               Crafted with{' '}
               <span className='text-white'>React and Tailwind CSS</span>.
-              Continuously evolving.
             </p>
           </div>
         </div>

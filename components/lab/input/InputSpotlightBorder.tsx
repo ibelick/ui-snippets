@@ -44,7 +44,7 @@ const InputSpotlightBorder = () => {
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           autoComplete='off'
-          placeholder='Enter your email'
+          placeholder='Enter Text Here'
           type='email'
           name='email'
           className='h-12 w-full cursor-default rounded-md border border-slate-800 bg-neutral-950 p-3.5 text-slate-100 transition-colors duration-500 placeholder:select-none  placeholder:text-neutral-500 focus:border-[#ffb6ff] focus:outline-none'

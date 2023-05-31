@@ -5,7 +5,7 @@ const CardPulseBorder = () => {
         <div className='left-0 h-[1px] animate-border-width rounded-full bg-gradient-to-r from-[rgba(17,17,17,0)] via-white to-[rgba(17,17,17,0)] transition-all duration-1000' />
       </div>
       <div className='flex h-full items-center justify-center rounded-md border border-slate-800 bg-black px-3 py-2'>
-        <p className='text-sm text-slate-200'>Glazed UI</p>
+        <p className='text-sm text-slate-200'>Card Content</p>
       </div>
     </div>
   );

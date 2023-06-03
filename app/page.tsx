@@ -1,5 +1,5 @@
 import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { GLAZED_COMPONENTS } from '@/data/components';
+import { COMPONENTS } from '@/data/components';
 import Link from 'next/link';
 
 type CardComponentProps = {
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
       <div className='mx-auto max-w-7xl py-10'>
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
-          {GLAZED_COMPONENTS.map((item, index) => (
+          {COMPONENTS.map((item, index) => (
             <CardComponent key={index} slug={item.slug} name={item.name}>
               <item.component />
             </CardComponent>

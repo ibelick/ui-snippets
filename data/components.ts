@@ -35,7 +35,7 @@ const TWCONFIG = {
   },
 };
 
-export const GLAZED_COMPONENTS = [
+export const COMPONENTS = [
   {
     name: 'Text Gradient',
     component: TextGradient,

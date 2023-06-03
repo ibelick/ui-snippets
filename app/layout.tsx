@@ -28,7 +28,7 @@ const Header = () => {
           <TwitterLogoIcon className='h-6 w-6 text-slate-400 transition-colors hover:text-white' />
         </a>
         <a
-          href='https://github.com/ibelick/glazed-ui'
+          href='https://github.com/ibelick/ui'
           target='_blank'
           rel='noopener noreferrer'
           className='inline-flex'

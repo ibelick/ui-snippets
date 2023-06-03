@@ -1,9 +1,9 @@
 import { promisify } from 'util';
 import fs from 'fs';
 import path from 'path';
-import CodeBlock from '@/components/glazed/CodeBlock';
-import { GLAZED_COMPONENTS } from '@/data/components';
-import ComponentPlayground from '@/components/glazed/ComponentPlayground';
+import CodeBlock from '@/components/app/CodeBlock';
+import { COMPONENTS } from '@/data/components';
+import ComponentPlayground from '@/components/app/ComponentPlayground';
 
 async function readFilePath(filePath: string) {
   const readFile = promisify(fs.readFile);
@@ -16,7 +16,7 @@ async function readFilePath(filePath: string) {
 }
 
 export async function generateStaticParams() {
-  const componentSlugs = GLAZED_COMPONENTS.map((component) => ({
+  const componentSlugs = COMPONENTS.map((component) => ({
     slug: component.slug,
   }));
 
@@ -26,7 +26,7 @@ export async function generateStaticParams() {
 export const dynamicParams = false;
 
 const ComponentPage = async ({ params }: { params: { slug: string } }) => {
-  const currentComponentData = GLAZED_COMPONENTS.find(
+  const currentComponentData = COMPONENTS.find(
     (component) => component.slug === params.slug
   );
 

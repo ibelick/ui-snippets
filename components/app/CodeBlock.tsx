@@ -1,4 +1,4 @@
-import Code from '@/components/glazed/Code';
+import Code from '@/components/app/Code';
 import CopyCode from './CopyCode';
 import { Lang } from 'shiki';
 

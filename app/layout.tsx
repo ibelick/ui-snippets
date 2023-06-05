@@ -3,6 +3,7 @@ import './globals.css';
 import './prism.css';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,7 +28,7 @@ const Header = () => {
           <TwitterLogoIcon className='h-6 w-6 text-slate-400 transition-colors hover:text-white' />
         </a>
         <a
-          href='https://github.com/ibelick/ui'
+          href='https://github.com/ibelick/ui-snippets'
           target='_blank'
           rel='noopener noreferrer'
           className='inline-flex'
@@ -44,8 +45,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const isDev = process.env.NODE_ENV === 'development';
+
   return (
     <html lang='en'>
+      {!isDev ? (
+        <Script
+          async
+          src='https://analytics.umami.is/script.js'
+          data-website-id='d6b95341-74ea-4ba4-9f82-6b10cc342ea8'
+        />
+      ) : null}
       <body className={inter.className} suppressHydrationWarning={true}>
         <div className='bg-black'>
           <div className='mx-auto flex min-h-screen max-w-5xl flex-col px-4'>

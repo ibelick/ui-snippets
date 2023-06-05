@@ -18,18 +18,42 @@ import CardSpotlight from '@/components/lab/card/CardSpotlight';
 import CardPulseBorder from '@/components/lab/card/CardPulseBorder';
 
 const TWCONFIG = {
-  ['animated-background-shine']: {
-    theme: {
-      extend: {
-        animation: {
-          'background-shine': 'background-shine 2s linear infinite',
+  ['text-gradient']: {
+    animation: {
+      'text-gradient': 'text-gradient 1.5s linear infinite',
+    },
+    keyframes: {
+      'text-gradient': {
+        to: {
+          backgroundPosition: '200% center',
         },
-        keyframes: {
-          'background-shine': {
-            from: { backgroundPosition: '0 0' },
-            to: { backgroundPosition: '-200% 0' },
-          },
-        },
+      },
+    },
+  },
+  ['background-shine']: {
+    animation: {
+      'background-shine': 'background-shine 2s linear infinite',
+    },
+    keyframes: {
+      'background-shine': {
+        from: { backgroundPosition: '0 0' },
+        to: { backgroundPosition: '-200% 0' },
+      },
+    },
+  },
+  ['pulse-slow']: {
+    animation: {
+      'pulse-slow': 'pulse 6s infinite cubic-bezier(0.4, 0, 0.6, 1)',
+    },
+  },
+  ['border-width']: {
+    animation: {
+      'border-width': 'border-width 3s infinite alternate',
+    },
+    keyframes: {
+      'border-width': {
+        from: { width: '10px', opacity: '0' },
+        to: { width: '100px', opacity: '1' },
       },
     },
   },
@@ -47,18 +71,21 @@ export const COMPONENTS = [
     component: TextAnimatedGradient,
     slug: 'text-animated-gradient',
     type: 'text',
+    twConfig: TWCONFIG['text-gradient'],
   },
   {
     name: 'Text Shine',
     component: TextShine,
     slug: 'text-shine',
     type: 'text',
+    twConfig: TWCONFIG['background-shine'],
   },
   {
     name: 'Button Background Shine',
     component: ButtonBackgroundShine,
     slug: 'button-background-shine',
     type: 'button',
+    twConfig: TWCONFIG['background-shine'],
   },
   {
     name: 'Button Gradient',
@@ -107,19 +134,20 @@ export const COMPONENTS = [
     component: InputPulseBorder,
     slug: 'input-pulse-border',
     type: 'input',
+    twConfig: TWCONFIG['pulse-slow'],
   },
   {
     name: 'Badge Animated Gradient Border',
     component: BadgeAnimatedGradientBorder,
     slug: 'badge-animated-gradient-border',
     type: 'badge',
-    twConfig: TWCONFIG['animated-background-shine'],
   },
   {
     name: 'Badge Shine',
     component: BadgeShine,
     slug: 'badge-shine',
     type: 'badge',
+    twConfig: TWCONFIG['background-shine'],
   },
   {
     name: 'Badge Text Gradient',
@@ -144,5 +172,6 @@ export const COMPONENTS = [
     component: CardPulseBorder,
     slug: 'card-pulse-border',
     type: 'card',
+    twConfig: TWCONFIG['pulse-slow'],
   },
 ];

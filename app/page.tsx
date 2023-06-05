@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           <div>
             <h1 className='mb-8 bg-gradient-to-t from-[#6d6d6d] to-[#f4f4f4] bg-clip-text text-4xl text-transparent md:text-5xl'>
-              A vibrant collection of next-gen UI components and effects
+              A unique collection of modern UI components and effects
             </h1>
             <p className='text-xl text-slate-500'>
               Crafted with{' '}

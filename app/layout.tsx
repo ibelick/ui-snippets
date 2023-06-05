@@ -7,9 +7,8 @@ import Link from 'next/link';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'ibelick - UI components collections',
-  description:
-    'Dive into a vibrant collection of next-gen UI components and effects. Each piece is meticulously crafted with React and Tailwind CSS, designed to inspire and accelerate your web development projects.',
+  title: 'ui.ibelick - components collections',
+  description: 'A unique collection of modern UI components and effects.',
 };
 
 const Header = () => {

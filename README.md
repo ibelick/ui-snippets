@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+ <img src="public/cover.webp" width="100%" />
 
-## Getting Started
+# UI.ibelick
 
-First, run the development server:
+Welcome to UI.ibelick, a collection of modern UI components and effects crafted with React and Tailwind CSS. This repository is a companion to my [blog](https://www.julienthibeaut.xyz/blog), where I write about various topics around design, front-end development, and more.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## How to Use
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+All components in this collection are designed to be easily integrated into your projects. Simply click on a component, copy the code, and paste it into your project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Inspiration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The components in this collection are inspired by various websites that have caught my eye, including: [Linear](https://linear.app/), [Liveblocks](https://liveblocks.io/), [Raycast](https://www.raycast.com/), [Vercel](https://vercel.com/), and more.
 
-## Learn More
+I'd also like to give a shout out to [UI Snippets](https://ui-snippets.dev/) and [Alexandru's Snippets](https://snippets.alexandru.so/) for inspiring me to build this showcase.
 
-To learn more about Next.js, take a look at the following resources:
+## Future Plans
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+While UI.ibelick is not perfect, it's a growing collection that I'm excited to develop further. If it gains traction, I plan to regularly update it and add more components. Your feedback and support can help shape its future, so stay tuned for more!

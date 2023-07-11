@@ -16,6 +16,7 @@ import BadgeTextGradient from '@/components/lab/badge/BadgeTextGradient';
 import CardAnimatedBorderGradient from '@/components/lab/card/CardAnimatedBorderGradient';
 import CardSpotlight from '@/components/lab/card/CardSpotlight';
 import CardPulseBorder from '@/components/lab/card/CardPulseBorder';
+import CardTilt from '@/components/lab/card/CardTilt';
 
 const TWCONFIG = {
   ['text-gradient']: {
@@ -173,5 +174,11 @@ export const COMPONENTS = [
     slug: 'card-pulse-border',
     type: 'card',
     twConfig: TWCONFIG['pulse-slow'],
+  },
+  {
+    name: 'Card Tilt',
+    component: CardTilt,
+    slug: 'card-tilt',
+    type: 'card',
   },
 ];

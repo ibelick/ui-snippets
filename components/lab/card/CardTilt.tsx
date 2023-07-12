@@ -50,9 +50,9 @@ const CardTilt = () => {
           transition: 'all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s',
         }}
       >
-        <div className='relative flex h-full w-full select-none items-center justify-center rounded-lg bg-[#8678f9] text-sm font-light text-slate-300'>
-          <div className='absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#8678f9] opacity-75 blur' />
-          <span className='text-md bg-gradient-to-t from-neutral-800 to-black bg-clip-text font-bold text-transparent'>
+        <div className='group relative flex h-full w-full select-none items-center justify-center rounded-lg border border-neutral-900 bg-black text-sm font-light text-slate-300'>
+          <div className='duration-600 absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#f2f0ff] opacity-0 blur transition group-hover:opacity-75' />
+          <span className='text-md bg-gradient-to-t from-neutral-400 to-white bg-clip-text font-bold text-transparent'>
             Hover me
           </span>
         </div>

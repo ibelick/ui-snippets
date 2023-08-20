@@ -135,7 +135,7 @@ export const COMPONENTS = [
     component: InputPulseBorder,
     slug: 'input-pulse-border',
     type: 'input',
-    twConfig: TWCONFIG['pulse-slow'],
+    twConfig: TWCONFIG['border-width'],
   },
   {
     name: 'Badge Animated Gradient Border',
@@ -173,7 +173,7 @@ export const COMPONENTS = [
     component: CardPulseBorder,
     slug: 'card-pulse-border',
     type: 'card',
-    twConfig: TWCONFIG['pulse-slow'],
+    twConfig: TWCONFIG['border-width'],
   },
   {
     name: 'Card Tilt',

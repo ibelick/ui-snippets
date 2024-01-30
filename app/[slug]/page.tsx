@@ -50,7 +50,7 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
         <ComponentPlayground isCentered>
           <currentComponentData.component />
         </ComponentPlayground>
-        <div className='mt-8'>
+        <div className='mt-8 relative'>
           <CodeBlock code={code} lang='tsx' />
         </div>
         {Boolean(twConfig) ? (

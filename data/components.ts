@@ -17,6 +17,7 @@ import CardAnimatedBorderGradient from '@/components/lab/card/CardAnimatedBorder
 import CardSpotlight from '@/components/lab/card/CardSpotlight';
 import CardPulseBorder from '@/components/lab/card/CardPulseBorder';
 import CardTilt from '@/components/lab/card/CardTilt';
+import ButtonGlassyColorShadow from '@/components/lab/button/ButtonGlassyColorShadow';
 
 const TWCONFIG = {
   ['text-gradient']: {
@@ -119,6 +120,12 @@ export const COMPONENTS = [
     type: 'button',
   },
   {
+    name: 'Button Glassy Color Shadow',
+    component: ButtonGlassyColorShadow,
+    slug: 'button-glassy-color-shadow',
+    type: 'button',
+  },
+  {
     name: 'Input Gradient Border',
     component: InputGradientBorder,
     slug: 'input-gradient-border',
@@ -135,7 +142,7 @@ export const COMPONENTS = [
     component: InputPulseBorder,
     slug: 'input-pulse-border',
     type: 'input',
-    twConfig: TWCONFIG['pulse-slow'],
+    twConfig: TWCONFIG['border-width'],
   },
   {
     name: 'Badge Animated Gradient Border',
@@ -173,7 +180,7 @@ export const COMPONENTS = [
     component: CardPulseBorder,
     slug: 'card-pulse-border',
     type: 'card',
-    twConfig: TWCONFIG['pulse-slow'],
+    twConfig: TWCONFIG['border-width'],
   },
   {
     name: 'Card Tilt',

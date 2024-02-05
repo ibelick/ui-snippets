@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <>
       {isRoot ? (
-        <div className='absolute left-0 right-0 top-0 -z-10 h-52 bg-gradient-to-b from-violet-500/20 from-10% to-gray-950' />
+        <div className='absolute left-0 right-0 top-0 -z-10 h-52 bg-gradient-to-b from-violet-400/10 from-10% to-black' />
       ) : null}
 
       <header className='container mx-auto flex max-w-5xl items-center justify-between px-4 py-8'>

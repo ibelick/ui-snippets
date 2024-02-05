@@ -2,7 +2,7 @@
 
 # UI.ibelick
 
-Welcome to UI.ibelick, a collection of modern UI components and effects crafted with React and Tailwind CSS. This repository is a companion to my [blog](https://www.julienthibeaut.xyz/blog), where I write about various topics around design, front-end development, and more.
+Welcome to UI.ibelick, a collection of dark mode components and effects crafted with React and Tailwind CSS. This repository is a companion to my [blog](https://www.julienthibeaut.xyz/blog), where I write about various topics around design, front-end development, and more.
 
 ## How to Use
 

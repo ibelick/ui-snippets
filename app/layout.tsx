@@ -1,17 +1,15 @@
-import { GitHubLogoIcon, TwitterLogoIcon } from '@radix-ui/react-icons';
 import './globals.css';
 import './prism.css';
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
 import Script from 'next/script';
-import { useRouter } from 'next/navigation';
 import { Header } from './header';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'ui.ibelick - components collections',
-  description: 'A unique collection of modern UI components and effects.',
+  title: 'ui.ibelick - Collection of dark mode-first components and effects.',
+  description:
+    'Collection of dark mode-first components and effects. Crafted with React and Tailwind CSS.',
 };
 
 export default function RootLayout({
@@ -31,7 +29,7 @@ export default function RootLayout({
         />
       ) : null}
       <body
-        className={`${inter.className} bg-gray-950`}
+        className={`${inter.className} bg-black`}
         suppressHydrationWarning={true}
       >
         <div className='relative min-h-screen'>

@@ -10,7 +10,7 @@ type CodeBlockProps = {
 
 const CodeBlock: React.FC<CodeBlockProps> = ({ code, lang, fileName }) => {
   return (
-    <div className='relative rounded-md border border-gray-900 p-4'>
+    <div className='relative rounded-md border border-gray-900 bg-black p-4'>
       {fileName ? (
         <div className='absolute left-4 top-4'>
           <span className='text-sm text-gray-400'>{fileName}</span>

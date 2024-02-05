@@ -46,7 +46,7 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
       <h1 className='text-md mb-2 font-light text-gray-400'>
         {currentComponentData.name}
       </h1>
-      <div className='container text-white'>
+      <div className='w-full'>
         <ComponentPlayground isCentered>
           <currentComponentData.component />
         </ComponentPlayground>

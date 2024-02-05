@@ -20,13 +20,13 @@ const CopyCode: React.FC<CopyCode> = ({ code }) => {
 
   return (
     <div
-      className='cursor-pointer rounded-md border border-neutral-900 bg-neutral-800 p-2 transition hover:bg-neutral-700'
+      className='cursor-pointer rounded-md border border-gray-900 bg-gray-900 p-2 transition hover:bg-gray-800'
       onClick={onCopy}
     >
       {hasCheckIcon ? (
-        <CheckIcon className='h-4 w-4 text-white' />
+        <CheckIcon className='h-4 w-4 text-gray-50' />
       ) : (
-        <CopyIcon className='h-4 w-4 text-white' />
+        <CopyIcon className='h-4 w-4 text-gray-50' />
       )}
     </div>
   );

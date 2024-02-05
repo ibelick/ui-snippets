@@ -43,7 +43,7 @@ const ButtonAnimatedGradient = () => {
         onBlur={handleBlur}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className='relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-slate-800 bg-gradient-to-r from-slate-900 to-slate-950 px-6 font-medium text-slate-300 shadow-2xl transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50'
+        className='relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-gray-800 bg-gradient-to-r from-gray-900 to-gray-950 px-6 font-medium text-gray-300 shadow-2xl transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50'
       >
         <div
           className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'

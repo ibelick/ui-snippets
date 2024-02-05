@@ -42,7 +42,7 @@ const CardSpotlight = () => {
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className='relative flex h-48 w-48 items-center justify-center overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-r from-black to-slate-950 px-8 py-16 shadow-2xl'
+      className='relative flex h-48 w-48 items-center justify-center overflow-hidden rounded-xl border border-gray-800 bg-gradient-to-r from-black to-gray-950 px-8 py-16 shadow-2xl'
     >
       <div
         className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'
@@ -51,7 +51,7 @@ const CardSpotlight = () => {
           background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,182,255,.1), transparent 40%)`,
         }}
       />
-      <p className='text-sm text-slate-200'>Card Content</p>
+      <p className='text-sm text-gray-200'>Card Content</p>
     </div>
   );
 };

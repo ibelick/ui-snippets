@@ -5,9 +5,9 @@ const badgeCva = cva(
   {
     variants: {
       variant: {
-        primary: 'bg-slate-900 hover:bg-slate-700 text-white',
-        secondary: 'bg-slate-400 text-black hover:bg-slate-300',
-        outline: 'border border-slate-400 text-black hover:bg-slate-200',
+        primary: 'bg-gray-900 hover:bg-gray-700 text-gray-50',
+        secondary: 'bg-gray-400 text-gray-950 hover:bg-gray-300',
+        outline: 'border border-gray-400 text-gray-950 hover:bg-gray-200',
       },
     },
     defaultVariants: {

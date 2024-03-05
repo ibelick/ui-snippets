@@ -6,6 +6,8 @@ import ButtonGradient from '@/components/lab/button/ButtonGradient';
 import ButtonHoverGradient from '@/components/lab/button/ButtonHoverGradient';
 import ButtonBackgroundSpotlight from '@/components/lab/button/ButtonBackgroundSpotlight';
 import ButtonRotatingBackgroundGradient from '@/components/lab/button/ButtonRotatingBackgroundGradient';
+import ButtonHoverGithubIcon from '@/components/lab/button/ButtonHoverGithubIcon';
+import ButtonHoverLinkedinIcon from '@/components/lab/button/ButtonHoverLinkedinIcon';
 import ButtonShadowGradient from '@/components/lab/button/ButtonShadowGradient';
 import InputGradientBorder from '@/components/lab/input/InputGradientBorder';
 import InputSpotlightBorder from '@/components/lab/input/InputSpotlightBorder';
@@ -116,6 +118,18 @@ export const COMPONENTS = [
     name: 'Button Shadow Gradient',
     component: ButtonShadowGradient,
     slug: 'button-shadow-gradient',
+    type: 'button',
+  },
+  {
+    name: 'Button Hover Github Icon',
+    component: ButtonHoverGithubIcon,
+    slug: 'button-hover-github-icon',
+    type: 'button',
+  },
+  {
+    name: 'Button Hover Linkedin Icon',
+    component: ButtonHoverLinkedinIcon,
+    slug: 'button-hover-linkedin-icon',
     type: 'button',
   },
   {

@@ -1,4 +1,4 @@
- <img src="public/cover.webp" width="100%" />
+ <img src="public/ibelick.webp" width="100%" />
 
 # UI.ibelick
 
